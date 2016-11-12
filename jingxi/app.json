@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/area/index",
+    "pages/car/index",
+    "pages/user/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "京西商城",
+    "navigationBarBackgroundColor": "red",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "red",
+    "borderStyle": "white",
+    "backgroundColor": "#FFFFFF",
+    "list": [{
+      "selectedIconPath": "images/1.png",  
+      "iconPath": "images/1.png", 
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }, {
+      "selectedIconPath": "images/2.png",  
+      "iconPath": "images/2.png",
+      "pagePath": "pages/area/index",
+      "text": "社区"
+    },{
+      "selectedIconPath": "images/3.png",  
+      "iconPath": "images/3.png",
+      "pagePath": "pages/car/index",
+      "text": "购物车"
+    },{
+      "selectedIconPath": "images/5.png",  
+      "iconPath": "images/5.png",
+      "pagePath": "pages/user/index",
+      "text": "我"
+    }]
+  }
+}

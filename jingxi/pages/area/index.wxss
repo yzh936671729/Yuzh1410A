@@ -1,0 +1,29 @@
+ .top-image {
+width: 50rpx;
+height: 50rpx;
+border-radius: 50%;
+}
+.top-zi{
+  margin-top:0px;
+  font-size : 15px;
+}
+.yi{
+    width: 16%;
+    display: inline-flex; 
+    align-items: center;
+    flex-direction: column;
+    margin-left:26px; 
+    padding: 35rpx;
+    
+}
+.yi-image{
+    width: 230rpx;
+    height: 230rpx;
+}
+.fabiao{
+    margin-top: 5px;
+   font-size : 13px; 
+}
+.top{
+    margin-top: 10px;
+}

@@ -1,0 +1,34 @@
+<block wx:for-items="{{top}}" wx:key="name">
+    <view class="top">
+        <image src="{{item.icon}}" class="top-image"/>
+        <text class="top-zi">{{item.name}}</text>
+    </view>
+</block>
+
+<view class="top-zi">[潮流服饰]:秋季大换装，就在我的小店，欢迎参观哈....</view>
+
+<block wx:for-items="{{yi}}" wx:key="name">
+    <view class="yi">
+        <image src="{{item.icon}}" class="yi-image"/>
+        <text class="top-zi">{{item.name}}</text>
+    </view>
+</block>
+
+<block wx:for-items="{{top}}" wx:key="name">
+    <view class="top-er">
+        <image src="{{item.icon}}" class="top-image"/>
+        <text class="top-zi">{{item.name}}</text>
+    </view>
+</block>
+
+<view class="top-zi">[潮流服饰]:秋季大换装，就在我的小店，欢迎参观哈....</view>
+
+<block wx:for-items="{{er}}" wx:key="name">
+    <view class="yi">
+        <image src="{{item.icon}}" class="yi-image"/>
+        <text class="top-zi">{{item.name}}</text>
+    </view>
+</block>
+
+
+

@@ -1,0 +1,42 @@
+<!--index.wxml-->
+<!--轮播图 banner-->
+<swiper indicator-dots="{{indicatorDots}}"  
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+    <block wx:for="{{images}}">  
+    <swiper-item>  
+        <navigator url="{{item.link}}" hover-class="navigator-hover">  
+        <image src="{{item.img_path}}" class="slide-image" style="width:100%;"/>  
+        </navigator>   
+    </swiper-item>  
+    </block>  
+</swiper>
+<!--导航 nav-->
+<view class="navs">
+	<block wx:for-items="{{nav}}" wx:key="name">
+			<view class="nav-item" catchtap="catchTapCategory" data-type="{{item.name}}">
+					<image src="{{item.img_path}}" class="nav-image"/>
+					<text>{{item.nav_name}}</text>
+            </view>
+    </block>
+</view>
+<!-- 商城客户 -->
+<view class="kehu">商城客户</view>
+<view class="sckh">
+	<block wx:for-items="{{sckh}}" wx:key="name">
+			<view class="sckh-item" catchtap="catchTapCategory" data-type="{{item.name}}">
+					<image src="{{item.img_path}}" class="sckh-image"/>
+					<text>{{item.sckh_name}}</text>
+            </view>
+    </block>
+</view>
+<!-- 精选促销 -->
+<view class="chuxiao">精选促销</view>
+<view class="jxcx">
+	<block wx:for-items="{{images}}" wx:key="name">
+		<view class="jxcx-item" catchtap="catchTapCategory" data-type="{{item.name}}">
+                <image src="{{item.img_path}}" class="jxcx-image"/>
+                <text>{{item.goods_name}}</text>
+                <text>￥{{item.goods_price}}</text>
+        </view>
+    </block>
+</view>

@@ -1,0 +1,27 @@
+<block wx:for-items="{{top}}" wx:key="name">
+    <view class="top">
+        <image src="{{item.icon}}" class="top-image"/>
+    </view>
+</block>
+<image src="../../images/user-img0.jpg" class="tou-img"/>
+
+<view class="center1">
+    <text class="myding">我的订单</text><text class="suoyou">查看所有订单></text>
+</view>
+<view class="dao">
+	<block wx:for-items="{{dao}}" wx:key="name">
+			<view class="dao-item" catchtap="catchTapCategory" data-type="{{item.name}}">
+					<image src="{{item.icon}}" class="dao-image"/>
+					<text>{{item.name}}</text>
+            </view>
+    </block>
+</view>
+
+<block wx:for-items="{{di}}" wx:key="name">
+    <view class="di">
+        <image src="{{item.icon}}" class="di-image"/>
+    </view>   
+</block>
+<view class="first">我的收藏</view>
+<view class="second">练习客服</view>
+<view class="three">关于我们</view>
